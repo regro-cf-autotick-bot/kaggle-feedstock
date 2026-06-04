@@ -29,7 +29,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - bleach
-    - kagglesdk >=0.1.23,<1.0
+    - kagglesdk >=0.1.27,<1.0
     - python-slugify
     - requests
     - python-dateutil
@@ -38,6 +38,7 @@ requirements:
     - packaging
     - protobuf
     - jupytext
+    - python-dotenv
 
 tests:
   - requirements:

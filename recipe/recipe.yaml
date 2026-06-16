@@ -2,8 +2,8 @@ schema_version: 1
 
 context:
   name: kaggle
-  version: "2.2.1"
-  python_min: "3.11"
+  version: 2.2.2
+  python_min: '3.11'
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 4675f19fa9487fb3072af5633ce8f07ab6a70d2f5f96d85593d0ab05ed5f65dc
+  sha256: c35ec93f851f7253e2ae04ea1e24aedb8afd44551a7e7f721463fd6dc2256e21
 
 build:
   number: 0
@@ -29,7 +29,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - bleach
-    - kagglesdk >=0.1.27,<1.0
+    - kagglesdk >=0.1.30,<1.0
     - python-slugify
     - requests
     - python-dateutil
@@ -39,7 +39,6 @@ requirements:
     - protobuf
     - jupytext
     - python-dotenv
-
 tests:
   - requirements:
       run:
